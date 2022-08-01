@@ -1,5 +1,12 @@
 import React from "react";
+import "./Projects.scss";
 
 export default function Projects() {
-  return <div>It is Projects list</div>;
+  return (
+    <section>
+      <h4>My recent</h4>
+      <h1>Porjects</h1>
+      <div className="container"></div>
+    </section>
+  );
 }
