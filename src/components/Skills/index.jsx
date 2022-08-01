@@ -1,8 +1,8 @@
 import React from "react";
 import "./Skills.scss";
+import { skills } from "../../db/skills.js";
 
-const frontSkills = ["HTML", "CSS", "JavaScript", "React"];
-const backSkills = ["NodeJS", "Express", "PHP", "MySQL", "PostgreSQL"];
+const { frontSkills, backSkills } = skills;
 
 export default function Skills() {
   return (
