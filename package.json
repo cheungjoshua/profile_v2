@@ -2,7 +2,7 @@
   "name": "profile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://cheungjoshua.github.io",
+  "homepage": "http://joshua-cheung.github.io",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
