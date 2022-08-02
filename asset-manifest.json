@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.183183db.css",
+    "main.js": "/static/js/main.ddae2656.js",
+    "static/js/787.f2a0fa2f.chunk.js": "/static/js/787.f2a0fa2f.chunk.js",
+    "static/media/me_1.jpeg": "/static/media/me_1.dd85b65d441cb2f3fa49.jpeg",
+    "static/media/me_2.jpg": "/static/media/me_2.2b30a68b3d262205d1d2.jpg",
+    "static/media/green-gobbler-1920x1080.png": "/static/media/green-gobbler-1920x1080.b8c9e5d6c150acc50202.png",
+    "static/media/joshua_cheung_resume.pdf": "/static/media/joshua_cheung_resume.c642958b398faecf1624.pdf",
+    "index.html": "/index.html",
+    "main.183183db.css.map": "/static/css/main.183183db.css.map",
+    "main.ddae2656.js.map": "/static/js/main.ddae2656.js.map",
+    "787.f2a0fa2f.chunk.js.map": "/static/js/787.f2a0fa2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.183183db.css",
+    "static/js/main.ddae2656.js"
+  ]
+}
