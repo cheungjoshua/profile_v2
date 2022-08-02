@@ -11,6 +11,7 @@ export default function Contact() {
           <a
             href="mailto:joshuacycheung@gmail.com"
             target="_blank"
+            rel="noopener noreferrer"
             className="link"
           >
             <FontAwesomeIcon icon={faEnvelope} />
@@ -20,6 +21,7 @@ export default function Contact() {
           <a
             href="https://www.linkedin.com/in/joshua-cy-cheung/"
             target="_blank"
+            rel="noopener noreferrer"
             className="link"
           >
             <FontAwesomeIcon icon={faLinkedin} />
@@ -29,6 +31,7 @@ export default function Contact() {
           <a
             href="https://github.com/cheungjoshua"
             target="_blank"
+            rel="noopener noreferrer"
             className="link"
           >
             <FontAwesomeIcon icon={faGithub} />
