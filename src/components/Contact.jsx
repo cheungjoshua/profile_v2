@@ -8,13 +8,31 @@ export default function Contact() {
     <section className="contact">
       <ul>
         <li>
-          <FontAwesomeIcon icon={faEnvelope} />
+          <a
+            href="mailto:joshuacycheung@gmail.com"
+            target="_blank"
+            className="link"
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a
+            href="https://www.linkedin.com/in/joshua-cy-cheung/"
+            target="_blank"
+            className="link"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faGithub} />
+          <a
+            href="https://github.com/cheungjoshua"
+            target="_blank"
+            className="link"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
         </li>
       </ul>
     </section>

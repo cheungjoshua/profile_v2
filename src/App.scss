@@ -30,12 +30,43 @@ h4 {
       font-size: 2em;
       color: $text-grey;
       opacity: 60%;
+
+      .link {
+        text-decoration: none;
+        color: $text-grey;
+      }
     }
   }
 }
 
 .footer {
+  @include fl-col-ctr;
+  height: 10vw;
+  background: $brandColorLight;
+  width: 100vw;
+
+  h4 {
+    color: $text-dark;
+    height: 20%;
+    margin-top: 2em;
+  }
+
   ul {
     @include fl-row-ctr;
+    height: 30%;
+    width: 50%;
+    margin: auto;
+    justify-content: space-evenly;
+
+    .link {
+      text-decoration: none;
+      color: $text-dark;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    display: none;
   }
 }

@@ -16,7 +16,7 @@ export default function Projects() {
   });
 
   return (
-    <section className="projects_main">
+    <section className="projects_main" id="projects">
       <h4>My recent</h4>
       <h1>Projects</h1>
       <div className="projects_container">{projectList}</div>
