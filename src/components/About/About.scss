@@ -5,12 +5,13 @@
 .about {
   @include fl-col-ctr;
   height: 70vh;
-  margin: 5em auto;
+  margin: 10em auto;
 
   .about_container {
     @include fl-row-ctr;
-    gap: 10em;
+    gap: 6em;
     width: 60vw;
+    margin: 5em auto;
 
     .about_me_myPic {
       height: 24em;
@@ -24,7 +25,7 @@
     }
 
     .intro {
-      width: 100%;
+      width: 500px;
       color: $text-light;
       font-weight: 800;
       font-size: 1.2em;
