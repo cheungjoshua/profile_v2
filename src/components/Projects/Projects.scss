@@ -4,4 +4,50 @@
 
 .projects_main {
   @include fl-col-ctr;
+  margin: 5em auto;
+}
+
+.projects_container {
+  @include fl-row-ctr;
+  gap: 5em;
+  margin: 5em auto;
+  flex-wrap: wrap;
+}
+
+.project_card {
+  @include fl-col-ctr;
+  justify-content: space-around;
+  color: $text-light;
+  background: $brandColorDark;
+  border-radius: 2em;
+  width: 26em;
+  height: 40em;
+  overflow: hidden;
+
+  .project_describe {
+    width: 80%;
+  }
+
+  .project_link {
+    text-align: center;
+    text-decoration: none;
+    color: #12600b;
+    background: #b6ffaf;
+    border-radius: 1em;
+    font-size: 1.3em;
+    height: 1.8em;
+    padding: 0.1em;
+    width: 9em;
+  }
+}
+
+.project_image_container {
+  width: 85%;
+  height: 18em;
+  overflow: hidden;
+  border-radius: 2em;
+
+  img {
+    width: 32em;
+  }
 }

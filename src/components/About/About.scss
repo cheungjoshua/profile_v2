@@ -4,14 +4,15 @@
 
 .about {
   @include fl-col-ctr;
-  height: 70vh;
-  margin: 10em auto;
+  height: 60vh;
+  margin: 5em auto;
 
   .about_container {
     @include fl-row-ctr;
     gap: 6em;
     width: 60vw;
     margin: 5em auto;
+    flex-wrap: wrap;
 
     .about_me_myPic {
       height: 24em;

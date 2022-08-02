@@ -4,4 +4,50 @@
 
 .skills_main {
   @include fl-col-ctr;
+
+  .skillsCard_container {
+    @include fl-row-ctr;
+    gap: 5em;
+    margin: 5em auto;
+    flex-wrap: wrap;
+
+    .skill_card {
+      @include fl-col-ctr;
+      justify-content: space-around;
+      background: $brandColorDark;
+      border-radius: 2em;
+      width: 26em;
+      height: 20em;
+
+      header {
+        display: grid;
+        place-items: center;
+        height: 20%;
+      }
+
+      main {
+        height: 70%;
+      }
+
+      h4 {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: $text-dark;
+      }
+
+      ul {
+        @include fl-row-ctr;
+        flex-wrap: wrap;
+
+        li {
+          display: grid;
+          place-items: center;
+
+          color: $text-grey;
+          width: 12em;
+          height: 4em;
+        }
+      }
+    }
+  }
 }
