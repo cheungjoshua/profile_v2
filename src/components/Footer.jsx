@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <section>
+    <section className="footer">
       <h4></h4>
       <ul>
         <li>Home</li>

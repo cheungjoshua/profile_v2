@@ -28,7 +28,14 @@ h4 {
 
     li {
       font-size: 2em;
-      color: #dbd7d7;
+      color: $text-grey;
+      opacity: 60%;
     }
+  }
+}
+
+.footer {
+  ul {
+    @include fl-row-ctr;
   }
 }

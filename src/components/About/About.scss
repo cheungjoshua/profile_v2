@@ -1,1 +1,34 @@
 @import "../../styles/body.scss";
+@import "../../styles/mixing.scss";
+@import "../../styles/variables.scss";
+
+.about {
+  @include fl-col-ctr;
+  height: 70vh;
+  margin: 5em auto;
+
+  .about_container {
+    @include fl-row-ctr;
+    gap: 10em;
+    width: 60vw;
+
+    .about_me_myPic {
+      height: 24em;
+      border-radius: 2em;
+      transform: rotate(10deg);
+      transition: transform 1s;
+    }
+
+    .about_me_myPic:hover {
+      transform: rotate(0);
+    }
+
+    .intro {
+      width: 100%;
+      color: $text-light;
+      font-weight: 800;
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+  }
+}

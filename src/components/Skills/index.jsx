@@ -6,7 +6,7 @@ const { frontSkills, backSkills } = skills;
 
 export default function Skills() {
   return (
-    <section>
+    <section className="skills_main">
       <h4>About my</h4>
       <h1>Skills</h1>
       <div className="container">

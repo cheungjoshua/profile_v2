@@ -1,1 +1,7 @@
 @import "../../styles/body.scss";
+@import "../../styles/mixing.scss";
+@import "../../styles/variables.scss";
+
+.skills_main {
+  @include fl-col-ctr;
+}
