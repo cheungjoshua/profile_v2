@@ -1,0 +1,12 @@
+@import "./styles/variables.scss";
+@import "./styles/mixing.scss";
+
+h1 {
+  color: $text-dark;
+  font-size: 2em;
+}
+
+h4 {
+  color: $text-grey;
+  font-weight: 400;
+}

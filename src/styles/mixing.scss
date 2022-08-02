@@ -1,0 +1,15 @@
+// Center elements in a flex
+
+@mixin fl-col-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin fl-row-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
