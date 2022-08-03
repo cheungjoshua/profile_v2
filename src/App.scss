@@ -1,3 +1,4 @@
+@import "./styles/body.scss";
 @import "./styles/variables.scss";
 @import "./styles/mixing.scss";
 
@@ -66,6 +67,23 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
+  .contact {
+    top: unset;
+    right: unset;
+    bottom: 0;
+    height: 10vh;
+    width: 100vw;
+
+    ul {
+      @include fl-row-ctr;
+      justify-content: center;
+
+      .link {
+        margin: 1em;
+      }
+    }
+  }
+
   .footer {
     display: none;
   }

@@ -1,4 +1,3 @@
-@import "../../styles/body.scss";
 @import "../../styles/mixing.scss";
 @import "../../styles/variables.scss";
 
@@ -46,6 +45,22 @@
           color: $text-grey;
           width: 12em;
           height: 4em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills_main {
+    .skillsCard_container {
+      .skill_card {
+        width: 80vw;
+
+        ul {
+          li {
+            width: 8em;
+          }
         }
       }
     }
