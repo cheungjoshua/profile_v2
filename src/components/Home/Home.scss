@@ -19,16 +19,31 @@
       height: 1.8em;
       margin: 0 1em;
       width: 9em;
+      cursor: pointer;
     }
     .line {
       background-color: transparent;
       border: 2px solid $text-grey;
       color: $text-grey;
+      transition: 0.5s;
     }
+
+    .line:hover {
+      border: none;
+      background: $brandColorDark;
+      color: $text-dark;
+    }
+
     .solid {
       border: 0;
       color: $text-dark;
       background: $brandColorLight;
+      transition: 0.5s;
+    }
+
+    .solid:hover {
+      background: $brandColorDark;
+      color: $text-grey;
     }
   }
 }

@@ -30,13 +30,20 @@
   .project_link {
     text-align: center;
     text-decoration: none;
-    color: #12600b;
-    background: #b6ffaf;
+    color: $text-dark;
+    background: $brandColorLight;
     border-radius: 1em;
     font-size: 1.3em;
     height: 1.8em;
     padding: 0.1em;
     width: 9em;
+    transition: 0.5s;
+  }
+
+  .project_link:hover {
+    border: 2px solid $text-grey;
+    background: $brandColorDark;
+    color: $text-grey;
   }
 }
 
