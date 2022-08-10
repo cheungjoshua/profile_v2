@@ -78,6 +78,7 @@ h4 {
     bottom: 0;
     height: 10vh;
     width: 100vw;
+    justify-content: center;
 
     ul {
       @include fl-row-ctr;
