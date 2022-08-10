@@ -4,12 +4,14 @@
 
 h1 {
   color: $text-dark;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: 800;
 }
 
 h4 {
   color: $text-grey;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.5em;
 }
 
 .contact {
@@ -42,7 +44,7 @@ h4 {
 
 .footer {
   @include fl-col-ctr;
-  height: 10vh;
+  height: 15vh;
   background: $brandColorLight;
   width: 100vw;
 
