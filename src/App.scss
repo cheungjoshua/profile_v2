@@ -62,6 +62,11 @@ h4 {
     .link {
       text-decoration: none;
       color: $text-dark;
+      transition: 0.5s;
+    }
+
+    .link:hover {
+      color: $text-grey;
     }
   }
 }
