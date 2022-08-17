@@ -8,9 +8,11 @@ export default function Projects() {
     return (
       <ProjectCard
         id={item.id}
+        name={item.name}
         image={item.image}
         link={item.link}
         describe={item.describe}
+        stack={item.stack}
       />
     );
   });
