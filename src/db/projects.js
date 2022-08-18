@@ -29,4 +29,14 @@ export const projects = [
     link: "https://github.com/cheungjoshua/scheduler",
     stack: "React, Express, Node, SASS, PSQL, HTML, Javascript",
   },
+  {
+    id: 3,
+    name: "Simple Movie App",
+    image:
+      "https://github.com/cheungjoshua/movie-app/raw/main/doc/home.png?raw=true",
+    describe:
+      "A simple movie app that user can render movies in different category by click the genre from the drop down menu in Nav.",
+    link: "https://github.com/cheungjoshua/movie-app",
+    stack: "React, HTML, SASS, Axios, Javascript",
+  },
 ];
