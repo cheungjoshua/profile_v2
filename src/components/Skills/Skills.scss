@@ -1,69 +1,50 @@
 @import "../../styles/mixing.scss";
 @import "../../styles/variables.scss";
 
-.skills_main {
-  @include fl-col-ctr;
-
-  .skillsCard_container {
-    @include fl-row-ctr;
-    gap: 5em;
-    margin: 5em auto;
-    flex-wrap: wrap;
-
-    .skill_card {
-      @include fl-col-ctr;
-      justify-content: space-around;
-      background: $brandColorDark;
-      border-radius: 0.5em;
-      width: 26em;
-      height: 20em;
-      box-shadow: rgba(89, 89, 89, 0.35) 0px 5px 15px;
-
-      header {
-        display: grid;
-        place-items: center;
-        height: 20%;
-      }
-
-      main {
-        height: 70%;
-      }
-
-      h4 {
-        font-size: 1.4em;
-        font-weight: 700;
-        color: $text-dark;
-      }
-
-      ul {
-        @include fl-row-ctr;
-        flex-wrap: wrap;
-
-        li {
-          display: grid;
-          place-items: center;
-          font-size: 1.2em;
-          font-weight: 600;
-          color: $text-grey;
-          width: 8em;
-          height: 4em;
-        }
-      }
-    }
+#skills {
+  margin-top: 2em;
+  padding: 150px 0;
+  background: linear-gradient(
+    97.5deg,
+    rgba(182, 255, 175, 0.49) -2.98%,
+    rgba(70, 134, 64, 0.4802) 87.65%
+  );
+  transform: rotate(0.06deg);
+  h1 {
+    font-family: $logo-font;
+    color: $logoColor;
+    font-size: clamp(2rem, 1.4rem + 1.5vw, 4.5rem);
   }
-}
 
-@media screen and (max-width: 600px) {
-  .skills_main {
-    .skillsCard_container {
-      .skill_card {
-        width: 80vw;
+  h4 {
+    color: $text-dark;
+    font-size: clamp(0.75rem, 0.8rem + 0.5vw, 2rem);
+  }
 
-        ul {
-          li {
-            width: 8em;
-            font-size: 1.1em;
-          }
+  .skills_listContainer {
+    margin-top: 2.5em;
+    padding: 0;
+    ul {
+      width: 100%;
+      gap: 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+      .skill_icon {
+        @include fl-col-ctr;
+        width: 120px;
+        color: $text-dark;
+        font-weight: 800;
+        text-transform: uppercase;
+        i {
+          @include fl-col-ctr;
+          // width: 40px;
+          // height: 40px;
+          margin-bottom: 8px;
+          font-size: 3.5rem;
         }
       }
     }

@@ -1,4 +1,31 @@
 export const skills = {
-  frontSkills: ["HTML", "CSS", "JavaScript", "React"],
-  backSkills: ["NodeJS", "Express", "PHP", "MySQL", "PostgreSQL"],
+  mySkills: [
+    "html5-plain",
+    "css3-plain",
+    "sass-original",
+    "javascript-plain",
+    "react-original",
+    "nodejs-plain",
+    "express-original",
+    "php-plain",
+    "mysql-plain",
+    "postgresql-plain",
+    "mongodb-plain",
+    "figma-plain",
+    "git-plain",
+  ],
+  frontSkills: [
+    "nodejs-plain",
+    "express-original",
+    "php-plain",
+    "mysql-plain",
+    "postgresql-plain",
+  ],
+  backSkills: [
+    "nodejs-plain",
+    "express-original",
+    "php-plain",
+    "mysql-plain",
+    "postgresql-plain",
+  ],
 };

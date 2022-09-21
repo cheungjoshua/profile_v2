@@ -1,18 +1,20 @@
 import React from "react";
 
-export default function SkillCard({ title, skills }) {
+export default function SkillCard({ skills }) {
   const skillsList = skills.map((skill) => {
-    return <li>{skill}</li>;
+    const iconName = `devicon-${skill}`;
+    const skillName = skill.split("-")[0];
+    return (
+      <li className="skill_icon">
+        <i className={iconName}></i>
+        {skillName}
+      </li>
+    );
   });
 
   return (
-    <section className="skill_card">
-      <header>
-        <h4>{title}</h4>
-      </header>
-      <main>
-        <ul>{skillsList}</ul>
-      </main>
+    <section className="skills_listContainer">
+      <ul>{skillsList}</ul>
     </section>
   );
 }
