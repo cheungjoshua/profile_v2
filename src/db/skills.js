@@ -14,18 +14,4 @@ export const skills = {
     "figma-plain",
     "git-plain",
   ],
-  frontSkills: [
-    "nodejs-plain",
-    "express-original",
-    "php-plain",
-    "mysql-plain",
-    "postgresql-plain",
-  ],
-  backSkills: [
-    "nodejs-plain",
-    "express-original",
-    "php-plain",
-    "mysql-plain",
-    "postgresql-plain",
-  ],
 };
