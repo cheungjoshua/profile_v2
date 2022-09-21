@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import myPic from "../../image/me_2.jpg";
 import Resume from "../../files/joshua_cheung_resume.pdf";
 import "./Home.scss";
@@ -17,9 +18,9 @@ export default function Home() {
           <a href={Resume} download className="btn solid link">
             resume
           </a>
-          <a href="mailto:joshuacycheung@gmail.com" className="btn line link">
-            email me
-          </a>
+          <Link to="#footer" className="btn line link" smooth>
+            contact
+          </Link>
         </div>
       </div>
     </section>

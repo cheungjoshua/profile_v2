@@ -146,6 +146,7 @@ h4 {
 
 @media screen and (max-width: 600px) {
   .contact {
+    display: none;
     top: unset;
     right: unset;
     bottom: 0;
@@ -161,9 +162,5 @@ h4 {
         margin: 1em;
       }
     }
-  }
-
-  .footer {
-    display: none;
   }
 }
