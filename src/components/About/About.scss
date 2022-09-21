@@ -1,46 +1,11 @@
 @import "../../styles/mixing.scss";
 @import "../../styles/variables.scss";
 
-.about {
-  @include fl-col-ctr;
-  height: 60vh;
-  margin: 5em auto;
-
-  .about_container {
-    @include fl-row-ctr;
-    gap: 6em;
-    width: 60vw;
-    margin: 5em auto;
-    flex-wrap: wrap;
-
-    .about_me_myPic {
-      height: 24em;
-      border-radius: 0.5em;
-      box-shadow: rgba(89, 89, 89, 0.35) 0px 5px 15px;
-    }
-
-    .intro {
-      width: 500px;
-      color: $text-light;
-      font-weight: 800;
-      font-size: 1.2em;
-      line-height: 1.5em;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .about {
-    height: 100vh;
-    // margin: auto;
-
-    .about_container {
-      margin: auto;
-      gap: 0;
-
-      .intro {
-        font-size: 1em;
-      }
+#about {
+  .about_imageContainer {
+    display: block;
+    img {
+      width: 100%;
     }
   }
 }

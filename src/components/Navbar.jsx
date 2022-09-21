@@ -8,6 +8,16 @@ export default function Navbar() {
 
   let navClass = navShow ? "navLinks showNav" : "navLinks";
 
+  ////////////////////////
+  /// Help ** NOT ** scroll all the way to the top
+  /// when using react-router-hash-link
+  /////////////////////////
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -100;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+
   return (
     <nav className="headNav" id="headNav">
       <div className="wrapper">
@@ -45,6 +55,7 @@ export default function Navbar() {
                 onClick={() => {
                   setNavShow(false);
                 }}
+                scroll={scrollWithOffset}
               >
                 About
               </Link>
@@ -57,6 +68,7 @@ export default function Navbar() {
                 onClick={() => {
                   setNavShow(false);
                 }}
+                scroll={scrollWithOffset}
               >
                 Skills
               </Link>
@@ -69,6 +81,7 @@ export default function Navbar() {
                 onClick={() => {
                   setNavShow(false);
                 }}
+                scroll={scrollWithOffset}
               >
                 Projects
               </Link>
