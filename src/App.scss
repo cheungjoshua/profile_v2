@@ -2,6 +2,77 @@
 @import "./styles/variables.scss";
 @import "./styles/mixing.scss";
 
+.wrapper {
+  max-width: 1250px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.headNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  z-index: 88;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navLinks {
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    padding: 120px 50px;
+    font-size: 2rem;
+    transition: right 0.7s ease-in-out;
+
+    .link {
+      display: inline-block;
+      padding: 10px;
+      color: $text-dark;
+      font-size: 2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  .showNav {
+    right: 0;
+  }
+}
+
+.myNameLogo {
+  font-family: $logo-font;
+  color: $logoColor;
+  font-size: clamp(1.75rem, 1.3rem + 2.25vw, 2.5rem);
+}
+
+#hamburger {
+  position: relative;
+  color: $text-dark;
+  font-size: clamp(1.8rem, 1.5rem + 2.25vw, 2.5rem);
+  z-index: 800;
+
+  .navToggle {
+    cursor: pointer;
+  }
+}
+
 h1 {
   color: $text-dark;
   font-size: 2.5em;
