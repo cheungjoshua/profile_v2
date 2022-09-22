@@ -6,13 +6,15 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar() {
   const [navShow, setNavShow] = useState(false);
   const [fade, setFade] = useState(false);
-
-  let navClass = navShow ? "navLinks showNav" : "navLinks";
-
-  let headNavClass = fade ? "headNav fadeIn" : "headNav";
-
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  // Nav link show/hide with toggle onclick
+  let navClass = navShow ? "navLinks showNav" : "navLinks";
+
+  // Head Nav bar background color fade In/out when scroll
+  let headNavClass = fade ? "headNav fadeIn" : "headNav";
+
+  // Create onScroll function to check the scrollY
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY !== 0 && window.scrollY > 30) {
@@ -22,12 +24,12 @@ export default function Navbar() {
         setFade(false);
         console.log("fadeout");
       }
-
       // remember current page location to use in the next move
       setLastScrollY(window.scrollY);
     }
   };
 
+  // Event listener call function when scroll, depend on lastScrollY
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlNavbar);
