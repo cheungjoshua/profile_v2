@@ -1,45 +1,41 @@
 @import "../../styles/mixing.scss";
 @import "../../styles/variables.scss";
 
-.about {
-  @include fl-col-ctr;
-  height: 60vh;
-  margin: 5em auto;
+#about {
+  p {
+    color: $text-dark;
+    font-size: 1.5rem;
+  }
 
   .about_container {
-    @include fl-row-ctr;
-    gap: 6em;
-    width: 60vw;
-    margin: 5em auto;
-    flex-wrap: wrap;
+    margin-top: 2em;
+    @include fl-col-ctr;
+  }
 
-    .about_me_myPic {
-      height: 24em;
-      border-radius: 0.5em;
-      box-shadow: rgba(89, 89, 89, 0.35) 0px 5px 15px;
+  .about_imageContainer {
+    img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 3px;
     }
+  }
 
-    .intro {
-      width: 500px;
-      color: $text-light;
-      font-weight: 800;
-      font-size: 1.2em;
-      line-height: 1.5em;
-    }
+  .about_introContainer {
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .about {
-    height: 100vh;
-    // margin: auto;
-
+@media screen and (min-width: 700px) {
+  #about {
     .about_container {
-      margin: auto;
-      gap: 0;
+      @include fl-row-ctr;
+      gap: 1em;
+      .about_imageContainer {
+        width: 40%;
+      }
 
-      .intro {
-        font-size: 1em;
+      .about_introContainer {
+        width: 40%;
       }
     }
   }
