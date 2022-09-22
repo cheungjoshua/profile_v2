@@ -2,21 +2,6 @@
 @import "../../styles/variables.scss";
 
 #about {
-  .wrapper {
-    width: 90%;
-  }
-
-  h1 {
-    font-family: $logo-font;
-    color: $logoColor;
-    font-size: clamp(2rem, 1.4rem + 1.5vw, 4.5rem);
-  }
-
-  h4 {
-    color: $brandColor;
-    font-size: clamp(0.75rem, 0.8rem + 0.5vw, 2rem);
-  }
-
   p {
     color: $text-dark;
     font-size: 1.5rem;

@@ -1,6 +1,9 @@
 @import "../../styles/mixing.scss";
 @import "../../styles/variables.scss";
 
+#project {
+}
+
 .projects_main {
   @include fl-col-ctr;
   margin: 5em auto;

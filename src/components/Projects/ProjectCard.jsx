@@ -5,7 +5,7 @@ export default function ProjectCard(props) {
     <section className="project_card">
       <h2>{props.name}</h2>
       <div className="project_image_container">
-        <img src={props.image} alt="" />
+        <img src="../../image/somthingAI.png" alt="" />
       </div>
       <div className="project_describe">
         <h4>Intro :</h4>

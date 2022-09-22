@@ -10,16 +10,6 @@
     rgba(70, 134, 64, 0.4802) 87.65%
   );
   transform: rotate(0.06deg);
-  h1 {
-    font-family: $logo-font;
-    color: $logoColor;
-    font-size: clamp(2rem, 1.4rem + 1.5vw, 4.5rem);
-  }
-
-  h4 {
-    color: $text-dark;
-    font-size: clamp(0.75rem, 0.8rem + 0.5vw, 2rem);
-  }
 
   .skills_listContainer {
     margin-top: 2.5em;

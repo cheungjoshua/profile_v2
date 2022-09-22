@@ -6,10 +6,6 @@
   align-items: center;
   height: 100vh;
 
-  .wrapper {
-    @include fl-col-ctr;
-  }
-
   .title_sub {
     color: $text-dark;
     font-size: clamp(1.5rem, 1.2rem + 2vw, 2.5rem);

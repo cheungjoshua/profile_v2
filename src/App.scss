@@ -3,13 +3,25 @@
 @import "./styles/mixing.scss";
 
 .wrapper {
+  @include fl-col-ctr;
   max-width: 1250px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
 .link {
   text-decoration: none;
+}
+
+.section_h1 {
+  font-family: $logo-font;
+  color: $logoColor;
+  font-size: clamp(2rem, 1.4rem + 1.5vw, 4.5rem);
+}
+
+.section_h4 {
+  color: $brandColor;
+  font-size: clamp(0.75rem, 0.8rem + 0.5vw, 2rem);
 }
 
 .headNav {
@@ -21,9 +33,8 @@
   z-index: 88;
 
   .wrapper {
-    display: flex;
+    @include fl-row-ctr;
     justify-content: space-between;
-    align-items: center;
   }
 
   .navLinks {
