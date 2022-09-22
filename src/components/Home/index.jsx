@@ -8,19 +8,22 @@ export default function Home() {
   return (
     <section className="home_main" id="home">
       <div className="wrapper">
-        <h4 className="title_sub">Hello, I'm</h4>
-        <h1 className="title_main">Joshua Cheung</h1>
-        <h4 className="title_sub">Full-Stack Developer</h4>
+        <div className="home_texts">
+          <h4 className="title_sub">Hello, I'm</h4>
+          <h1 className="title_main">Joshua Cheung</h1>
+          <h4 className="title_sub">Full-Stack Developer</h4>
+          <div className="button_list">
+            <a href={Resume} download className="btn solid link">
+              resume
+            </a>
+            <Link to="#footer" className="btn line link" smooth>
+              contact
+            </Link>
+          </div>
+        </div>
+
         <div className="imageContainer">
           <img src={myPic} alt="" className="myPic" />
-        </div>
-        <div className="button_list">
-          <a href={Resume} download className="btn solid link">
-            resume
-          </a>
-          <Link to="#footer" className="btn line link" smooth>
-            contact
-          </Link>
         </div>
       </div>
     </section>

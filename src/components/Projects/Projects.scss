@@ -1,70 +1,80 @@
 @import "../../styles/mixing.scss";
 @import "../../styles/variables.scss";
 
-#project {
-}
+#projects {
+  margin-top: 2em;
 
-.projects_main {
-  @include fl-col-ctr;
-  margin: 5em auto;
-}
-
-.projects_container {
-  @include fl-row-ctr;
-  gap: 5em;
-  margin: 5em auto;
-  flex-wrap: wrap;
-}
-
-.project_card {
-  @include fl-col-ctr;
-  justify-content: space-around;
-  color: $text-light;
-  background: $brandColorDark;
-  border-radius: 0.5em;
-  width: 26em;
-  height: 48em;
-  overflow: hidden;
-  box-shadow: rgba(89, 89, 89, 0.35) 0px 5px 15px;
-
-  .project_describe {
-    width: 80%;
-  }
-
-  .project_link {
-    text-align: center;
-    text-decoration: none;
-    color: $text-dark;
-    background: $brandColorLight;
-    border-radius: 0.5em;
-    font-size: 1.3em;
-    height: 1.8em;
-    padding: 0.1em;
-    width: 9em;
-    transition: 0.5s;
-    box-shadow: rgba(89, 89, 89, 0.35) 0px 5px 15px;
-  }
-
-  .project_link:hover {
-    border: 2px solid $text-grey;
-    background: $brandColorDark;
-    color: $text-grey;
-  }
-}
-
-.project_image_container {
-  width: 85%;
-  height: 18em;
-  overflow: hidden;
-  border-radius: 0.5em;
-
-  img {
-    width: 24em;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .project_card {
-    width: 80vw;
+    @include fl-col-ctr;
+    margin: 2em auto;
+
+    .project_image_container {
+      @include fl-col-ctr;
+      margin: 1em auto;
+      width: 100%;
+
+      img {
+        border-radius: 3px;
+        width: 100%;
+        max-width: 600px;
+        object-fit: contain;
+      }
+    }
+
+    .project_describe {
+      width: 100%;
+      color: $text-dark;
+      font-size: 1.1rem;
+
+      p {
+        font-weight: 500;
+      }
+    }
+
+    .project-title {
+      color: $logoColor;
+      font-family: $logo-font;
+      margin-bottom: 0.5em;
+    }
+
+    .project_describe-title {
+      color: $text-dark;
+      font-family: $logo-font;
+    }
+
+    .project_link {
+      text-decoration: none;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 400px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      border-radius: 6px;
+    }
+
+    .solid {
+      background: $brandColorDark;
+      margin-bottom: 1em;
+      padding: 12px 40px;
+      color: $site-white;
+      transition: 0.4s ease-in-out;
+    }
+
+    .solid:hover {
+      background: $brandColorLight;
+      color: $text-dark;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #projects {
+    .project_card {
+      @include fl-row-ctr;
+      gap: 2em;
+    }
   }
 }

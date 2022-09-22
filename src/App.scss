@@ -59,6 +59,11 @@
       font-size: 2rem;
       font-weight: 800;
       text-transform: uppercase;
+
+      transition: 0.5s;
+    }
+    .link:hover {
+      color: $logoColor;
     }
   }
 
@@ -96,43 +101,15 @@ h4 {
   font-size: 1.5em;
 }
 
-.contact {
-  position: fixed;
-  right: 0;
-  top: 0;
-  display: flex;
-
-  align-items: center;
-  height: 100vh;
-  width: 3em;
-
-  ul {
-    @include fl-col-ctr;
-    height: 30%;
-    justify-content: space-between;
-
-    li {
-      font-size: 2em;
-      color: $text-grey;
-      opacity: 50%;
-
-      .link {
-        text-decoration: none;
-        color: $logoColor;
-      }
-    }
-  }
-}
-
 .footer {
   @include fl-col-ctr;
   height: 15vh;
   background: $brandColorLight;
   width: 100vw;
 
-  h4 {
-    color: $text-dark;
-    height: 20%;
+  .footer-h4 {
+    color: $logoColor;
+    font-family: $logo-font;
     margin-top: 2em;
   }
 
@@ -144,6 +121,7 @@ h4 {
     justify-content: space-evenly;
 
     .link {
+      font-size: 2rem;
       text-decoration: none;
       color: $text-dark;
       transition: 0.5s;
@@ -156,22 +134,18 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
-  .contact {
+}
+
+@media screen and (min-width: 840px) {
+  .wrapper {
+    width: 90%;
+  }
+  #hamburger {
     display: none;
-    top: unset;
-    right: unset;
-    bottom: 0;
-    height: 10vh;
-    width: 100vw;
-    justify-content: center;
+  }
 
-    ul {
-      @include fl-row-ctr;
-      justify-content: center;
-
-      .link {
-        margin: 1em;
-      }
-    }
+  #navLinks {
+    all: unset;
+    @include fl-row-ctr;
   }
 }

@@ -15,7 +15,28 @@
   .about_imageContainer {
     img {
       width: 100%;
-      max-width: 390px;
+      max-width: 350px;
+      border-radius: 3px;
+    }
+  }
+
+  .about_introContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #about {
+    .about_container {
+      @include fl-row-ctr;
+      gap: 1em;
+      .about_imageContainer {
+        width: 40%;
+      }
+
+      .about_introContainer {
+        width: 40%;
+      }
     }
   }
 }

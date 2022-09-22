@@ -6,15 +6,19 @@
   align-items: center;
   height: 100vh;
 
-  .title_sub {
-    color: $text-dark;
-    font-size: clamp(1.5rem, 1.2rem + 2vw, 2.5rem);
-  }
+  .home_texts {
+    @include fl-col-ctr;
 
-  .title_main {
-    font-family: $logo-font;
-    color: $logoColor;
-    font-size: clamp(2rem, 2rem + 2.25vw, 4rem);
+    .title_sub {
+      color: $text-dark;
+      font-size: clamp(1.5rem, 1.2rem + 2vw, 2.5rem);
+    }
+
+    .title_main {
+      font-family: $logo-font;
+      color: $logoColor;
+      font-size: clamp(2rem, 2rem + 2.25vw, 4rem);
+    }
   }
 
   .button_list {
@@ -29,7 +33,7 @@
 
     .solid {
       background: $brandColorDark;
-      margin-bottom: 1em;
+
       padding: 12px 40px;
       color: $site-white;
       transition: 0.4s ease-in-out;
@@ -41,6 +45,7 @@
     }
 
     .line {
+      margin-top: 1em;
       border: 3px solid $text-dark;
       color: $text-dark;
       padding: 11px 30px;
@@ -53,7 +58,21 @@
     }
   }
 }
+
 .myPic {
   display: none;
   width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  #home {
+    .button_list {
+      flex-direction: row;
+
+      .line {
+        margin-top: 0;
+        margin-left: 2em;
+      }
+    }
+  }
 }

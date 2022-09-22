@@ -40,3 +40,15 @@
     }
   }
 }
+
+@media screen and (min-width: 600px) {
+  #skills {
+    margin: 7em 0;
+
+    .skills_listContainer {
+      ul {
+        gap: 50px;
+      }
+    }
+  }
+}

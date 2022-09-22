@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
   return (
     <section className="footer" id="footer">
-      <h4>Thank you for visiting</h4>
+      <h4 className="footer-h4">Thank you for visiting</h4>
       <ul>
         <li>
           <a
