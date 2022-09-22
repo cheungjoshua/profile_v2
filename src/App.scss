@@ -31,6 +31,8 @@
   right: 0;
   padding: 15px 0;
   z-index: 88;
+  background: none;
+  transition: 1s;
 
   .wrapper {
     @include fl-row-ctr;
@@ -72,10 +74,19 @@
   }
 }
 
+.fadeIn {
+  background: #689668;
+}
+
 .myNameLogo {
   font-family: $logo-font;
   color: $logoColor;
   font-size: clamp(1.75rem, 1.3rem + 2.25vw, 2.5rem);
+  transition: 1s;
+}
+
+.myNameLogo:hover {
+  color: $text-dark;
 }
 
 #hamburger {
@@ -86,6 +97,11 @@
 
   .navToggle {
     cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .navToggle:hover {
+    color: $logoColor;
   }
 }
 

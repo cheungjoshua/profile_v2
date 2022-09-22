@@ -1,12 +1,43 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const [navShow, setNavShow] = useState(false);
+  const [fade, setFade] = useState(false);
 
   let navClass = navShow ? "navLinks showNav" : "navLinks";
+
+  let headNavClass = fade ? "headNav fadeIn" : "headNav";
+
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY !== 0 && window.scrollY > 30) {
+        console.log("fadein");
+        setFade(true);
+      } else {
+        setFade(false);
+        console.log("fadeout");
+      }
+
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   ////////////////////////
   /// Help ** NOT ** scroll all the way to the top
@@ -19,7 +50,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="headNav" id="headNav">
+    <nav className={headNavClass} id="headNav">
       <div className="wrapper">
         <div className="logoContainer">
           <Link to="#home" className="link" smooth>
