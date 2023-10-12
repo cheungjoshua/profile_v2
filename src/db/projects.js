@@ -22,17 +22,6 @@ export const projects = [
     stack: "EJS, Express, Node, Tailwind, PSQL, HTML, Javascript",
   },
   {
-    id: 2,
-    name: "Scheduler",
-    image:
-      "https://github.com/cheungjoshua/profile_v2/blob/newDesign/src/image/scheduler.png?raw=true",
-    describe:
-      "Interview Scheduler is a responsive single-page application (SPA) build with React. A user can book an interview appointment for a specific day of the week. The user can also edit or delete their appointment.",
-    link: "https://github.com/cheungjoshua/scheduler",
-    location: "Repo",
-    stack: "React, Express, Node, SASS, PSQL, HTML, Javascript",
-  },
-  {
     id: 3,
     name: "Simple Movie App",
     image:
@@ -53,5 +42,16 @@ export const projects = [
     link: "https://github.com/cheungjoshua/mern-todo",
     location: "Repo",
     stack: "React, Express, Node, MongoDB",
+  },
+  {
+    id: 2,
+    name: "Scheduler",
+    image:
+      "https://github.com/cheungjoshua/profile_v2/blob/newDesign/src/image/scheduler.png?raw=true",
+    describe:
+      "Interview Scheduler is a responsive single-page application (SPA) build with React. A user can book an interview appointment for a specific day of the week. The user can also edit or delete their appointment.",
+    link: "https://github.com/cheungjoshua/scheduler",
+    location: "Repo",
+    stack: "React, Express, Node, SASS, PSQL, HTML, Javascript",
   },
 ];
